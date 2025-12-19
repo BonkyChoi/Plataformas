@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private void Start()
+    {
+        transform.position = GameManager.instance.savedPosition;
+        transform.eulerAngles = GameManager.instance.savedRotation;
+    }
+    
     [SerializeField] private float movementForce;
     [SerializeField] private float jumpForce;
     private float hInput;
