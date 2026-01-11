@@ -25,7 +25,7 @@ public class PlayerAttackSystem : MonoBehaviour
             timer = 0f;
         }
     }
-    //Metodo que se invoca desde un evento de animacion
+    
     private void AttackHit()
     {
         Collider2D result = Physics2D.OverlapCircle(attackPoint.position, attackRadius, whatIsDamageable);
